@@ -24,7 +24,7 @@ The Treasure Island Python program utilizes control flow structures and logical 
 
 ![P3_Treasure_Island.PNG](P3_Treasure_Island.PNG)
 
-# Project 3 : RockPaperScissor
+# Project 4  : RockPaperScissor
 Beginner Challange : 
 The Rock, Paper, Scissors Python program incorporates randomization using the random module and utilizes Python lists to manage the game's choices, allowing the user to play against the computer with dynamically generated outcomes.
 
