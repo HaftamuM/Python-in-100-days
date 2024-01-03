@@ -26,6 +26,6 @@ The Treasure Island Python program utilizes control flow structures and logical 
 
 # Project 3 : RockPaperScissor
 Beginner Challange : 
-The Treasure Island Python program utilizes control flow structures and logical operators to create a text-based adventure game, where user decisions determine the outcome of the story, leading to either success or failure.
+The Rock, Paper, Scissors Python program incorporates randomization using the random module and utilizes Python lists to manage the game's choices, allowing the user to play against the computer with dynamically generated outcomes.
 
 ![RockPaperScissor.PNG](RockPaperScissor.PNG)
