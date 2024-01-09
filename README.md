@@ -28,7 +28,7 @@ The Tip Calculator is a Python program employing user input, mathematical operat
 Beginner Challange : 
 The Treasure Island Python program utilizes control flow structures and logical operators to create a text-based adventure game, where user decisions determine the outcome of the story, leading to either success or failure.
 
-![P3_Treasure_Island.PNG](P3_Treasure_Island.PNG)
+![Treasure_Island.PNG](Treasure_Island.PNG)
 
 # Project 4  : RockPaperScissor
 Beginner Challange : 
