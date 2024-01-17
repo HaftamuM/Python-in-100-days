@@ -1,73 +1,19 @@
 import random 
+from Hangman_art import logo, stages
+from Hangman_words import word_list
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-
+print(logo)
 print("Hangman: Based on pets names")
 #T1 - Randomly choose a word from the word_list and assing it to a variable called chosen_word. 
 
 end_of_game = False 
-word_list= ["Dog","Cat","Rat"]
+
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
 lives = 6
 
-## print(f'Pssst, the solution is {chosen_word}.')
+print(f'Pssst, the solution is {chosen_word}.')
 
 display = []
 for _ in range(word_length): 
@@ -81,10 +27,12 @@ while not end_of_game:
         letter = chosen_word[position]
         if letter == guess: 
             display[position] = letter
+            print('Your guess is correct')
             print(f"{''.join(display)}")
     if guess not in chosen_word: 
         print(stages[lives]) 
         lives -= 1
+        print(f"you guessed {guess}, that isn't in the word. you have {lives} lives left")
         if lives == 0:
             end_of_game = True
             print("you loose")
