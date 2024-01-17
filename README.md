@@ -50,3 +50,6 @@ To experience the "Escaping the Maze" scenario on the Reeborg's World website us
 - Copy and paste the provided Python code into the code editor in the "Python code" tab.
 - After pasting the code, you can run it to see Reeborg navigate through the maze, following the specified instructions.
 - This allows you to interact with and observe the "Escaping the Maze" scenario using Python code on the Reeborg's World platform.
+
+# Project 7 : Hangman
+The Hangman game in Python is a word-guessing game where players attempt to discover a hidden word by suggesting letters. With each incorrect guess, a part of a hangman figure is drawn, and players aim to guess the word before the entire figure is completed.
