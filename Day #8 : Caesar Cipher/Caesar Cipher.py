@@ -8,7 +8,6 @@ text = input(f"Type your message:\n").lower()
 shift = int(input("Type the shift numbers:\n"))
  ## combine this to a 1 function when u get the time 
 
-
 def encrypt (plain_text, shift_amount):
     cipher_text = ""
     for letter in plain_text: 
