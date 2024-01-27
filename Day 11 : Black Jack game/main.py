@@ -9,4 +9,3 @@ CLUBS    = chr(9827) # Character 9827 is '♣'.
 # (A list of chr codes is at https://inventwithpython.com/charactermap)
 BACKSIDE = 'backside'
 
-# Redo the videos 
