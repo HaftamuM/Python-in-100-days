@@ -16,4 +16,8 @@ Python programming challenge that spans 100 days and 100 Projects by Dr. Angela 
 | 01/03/2024   | Project 9: Secret Auction Program  | Beginner - Dictionaries, Nesting and Secret Auction |
 | 01/03/2024   | Project 10: Calculator | Beginner - Functions and Output |
 | 01/03/2024   | Project 11: Black Jack Game | Beginner - Functions and Output |
-| 01/03/2024   | Project 12: Calculator | Beginner - Functions and Output |
+| 01/03/2024   | Project 13: Calculator | Beginner - Functions and Output |
+| 01/03/2024   | Project 14: Calculator | Beginner - Functions and Output |
+| 01/03/2024   | Project 15: Calculator | Beginner - Functions and Output |
+| 01/03/2024   | Project 16: Calculator | Beginner - Functions and Output |
+
