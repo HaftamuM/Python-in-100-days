@@ -6,9 +6,21 @@ import random
 
 print(logo)
 # Generate a radom account from the game data. 
+def format_data (account): 
+    """""#Format the account data into printable - dictionaries are accessed through a key"""""
+    account_name = account["name"]
+    account_descr = account["description"]
+    account_country = account["country"]
+    return (f"{account_name}, a {account_descr}, from {account_country}")
 
-#Format the account data into printable 
+account_a = random.choice(data)
+account_b = random.choice(data)
+if account_a == account_b: 
+    account_b = random.choice(data)
 
+print(f"compare A: {format_data(account_a)}.")
+print(vs)
+print(f"compare B: {format_data(account_b)}.")
 #Ask the user for a guess
 
 #Chack if a user is correct 
