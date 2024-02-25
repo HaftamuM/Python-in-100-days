@@ -1,4 +1,4 @@
-from art import logo
+from art import logo, vs
 from game_data import data 
 import random 
 
@@ -13,6 +13,8 @@ def format_data (account):
     account_country = account["country"]
     return (f"{account_name}, a {account_descr}, from {account_country}")
 
+def check_answer (guess, a_followers, b_followers):
+    """Use if statement to check """
 account_a = random.choice(data)
 account_b = random.choice(data)
 if account_a == account_b: 
@@ -20,11 +22,16 @@ if account_a == account_b:
 
 print(f"compare A: {format_data(account_a)}.")
 print(vs)
-print(f"compare B: {format_data(account_b)}.")
-#Ask the user for a guess
+print(f"Against B: {format_data(account_b)}.")
 
+      
+#Ask the user for a guess
+guess = input("who has more followers? Type 'A' or 'B': ").lower()
 #Chack if a user is correct 
 ##Get folower count of each account. 
+a_follower_count = account_a["follower_count"]
+b_follower_count = account_b["follower_count"]
+
 ## Use if statement to check if user is correct. 
 
 #Give use feeback on their guess... tracking score 
