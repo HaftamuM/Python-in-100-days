@@ -1,9 +1,9 @@
 # program requiremnt - follow the coffee machine 
-# TODO: 1. print report
-# TODO: 2. check resources sufficient? 
-# TODO: 3. Process using a cone 
-# TODO: 4. Check tranaction sucessful?
-# TODO: 5.Make the coffe
+#: 1. print report
+#: 2. check resources sufficient? 
+# : 3. Process using a cone 
+# : 4. Check tranaction sucessful?
+# : 5.Make the coffe
 
 MENU = { 
     "espresso": {
@@ -17,7 +17,7 @@ MENU = {
         "ingredients":{
         "water":200,
         "milk":150,
-        "coffee":18,
+        "coffee":24,
      },
      "cost": 1.5,
 },
@@ -25,12 +25,25 @@ MENU = {
         "ingredients":{
         "water":200,
         "milk":150,
-        "coffee":18,
+        "coffee":24,
      },
      "cost": 3.0,
 }}
+profit = 0
 resources = { 
     "water": 300,
     "milk": 200,
     "coffee": 100,
 }
+
+is_on = True 
+
+while is_on: 
+    choice = input ("What would you like? (espresso/latte/Cappuccino):")
+    if choice == "off":
+        is_on = False
+    elif choice == 'report':
+        print(f"water:{resources ['water']}ml")
+        print(f"Milk:{resources ['milk']}ml")
+        print(f"coffee:{resources ['coffee']}ml")
+        print(f"Money: ${profit}")
