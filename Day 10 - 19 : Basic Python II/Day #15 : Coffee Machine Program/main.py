@@ -46,6 +46,7 @@ def is_resource_sufficient(order_ingrediants):
         return True
 
 def process_coins(): 
+    """Rteurn the total calculated from coins inserted"""
     print("Please insert coins.")
     total = int(input("How may QUarters?:")) * 0.25
     total += int(input("How may dimes?:")) * 0.1
@@ -53,6 +54,21 @@ def process_coins():
     total += int(input("How may pannies?:")) * 0.01
     return True
 
+def is_transaction_sucessful(money_receivd,drink_cost):
+    if money_received >= drink_cost: 
+        change = round(money_receivd - drink_cost, 2) 
+        print(f"Here is ${change} in change")
+        global profit
+        profit += drink_cost:
+        return True 
+    else: 
+        print("SOrry that is not engh money.Money rerfunded.")
+        return False 
+    
+def mmake_coffee(drink_name, order_ingrediants):
+    for item in order_ingrediants: 
+        resource[item] -= order_ingrediants{item]}
+        print(f"Here is your {drink_name} ")
 is_on = True 
 
 
@@ -69,3 +85,5 @@ while is_on:
         drink = MENU[choice]
         if is_resource_sufficient(drink["ingrediants"]):
             payment = process_coins()
+            if is_transaction_sucessful(payment,drink["cost"]):
+                mak_coffee(choice, drink["ingrediants"])
