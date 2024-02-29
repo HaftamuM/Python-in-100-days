@@ -31,9 +31,10 @@ while is_on:
     else: 
         drink = menu.find_drink(choice)
         print(coffee_maker.is_resource_sufficient(drink))
+       #step 3 : Process coins 
         if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink,cost):
             coffee_maker.make_coffee(drink)
             
 
-#step 3 : Process coins 
+
         
