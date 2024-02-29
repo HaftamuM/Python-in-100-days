@@ -14,4 +14,5 @@ quiz =  QuizBrain(question_bank)
 while quiz.still_has_questions():
     quiz.next_question()
 
-
+print("you have complete the quiz")
+print(f"your final sore was: 10/{quiz.question_number}")
