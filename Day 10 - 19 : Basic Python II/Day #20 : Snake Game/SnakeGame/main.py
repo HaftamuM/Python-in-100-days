@@ -35,6 +35,13 @@ segments =  []
 
 snake = Snake()
 
+screen.listen()
+
+screen.onkey(snake.up, "Up") #snake up is triggerd 
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.Left, "Left")
+screen.onkey(snake.Right, "Right")
+
 
 game_is_on = True 
 while game_is_on: 
@@ -46,4 +53,6 @@ while game_is_on:
 #first segment 
     snake.move()
 
+#control the snake using the keyboard - key biding 
+    
 screen.exitonclick()
