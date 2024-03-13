@@ -5,6 +5,7 @@
 from turtle import screen, Turtle
 from snake import Snake
 import time 
+from food import Food 
 
 screen = screen()
 screen.setup(width=600, height=600)
@@ -34,9 +35,10 @@ segments =  []
 # Move the snake forward with a given time, and speed
 
 snake = Snake()
+food = Food()
+
 
 screen.listen()
-
 screen.onkey(snake.up, "Up") #snake up is triggerd 
 screen.onkey(snake.down, "Down")
 screen.onkey(snake.Left, "Left")
