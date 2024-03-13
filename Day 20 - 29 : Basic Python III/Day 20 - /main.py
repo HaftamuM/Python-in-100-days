@@ -4,9 +4,9 @@
 
 from turtle import screen, Turtle
 from snake import Snake
-import time 
 from food import Food 
-
+from scoreboard import Scoreboard
+import time 
 screen = screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
@@ -36,7 +36,7 @@ segments =  []
 
 snake = Snake()
 food = Food()
-
+scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkey(snake.up, "Up") #snake up is triggerd 
@@ -48,13 +48,18 @@ screen.onkey(snake.Right, "Right")
 game_is_on = True 
 while game_is_on: 
     screen.updat()
-    time.sleep(0.1) # one second delay 
+    time.sleep(0.1)
+    snake.move()
+     # one second delay 
     # for seg in segments: 
       #  seg.forwared(20)
-#Turn the segments in different direction , moving the third segment to the second, and the second to the 
-#first segment 
-    snake.move()
-
-#control the snake using the keyboard - key biding 
-    
+    #Turn the segments in different direction , moving the third segment to the second, and the second to the 
+    #first segment 
+    #control the snake using the keyboard - key biding 
+    #Detect collision with food , using distance method
+    if snake.head.distance(food) < 15:
+        print("collided")
+        food.refresh()
+        scoreboard.increase_score()
+        
 screen.exitonclick()
